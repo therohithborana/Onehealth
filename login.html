@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <title>Login</title>
+</head>
+<body>
+    <div id="preloader"></div>
+
+    <!-- Header Section Starts -->
+    <div class="header">
+        <a href="index.html" class="logo"><i class="fas fa-heartbeat"></i> OneHealth</a>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="index.html#services">services</a>
+            <a href="index.html#about">about</a>
+            <a href="doctors.html">doctors</a>
+            <a href="index.html#book">book</a>
+            <a href="index.html#review">review</a>
+            <a href="index.html#blogs">blogs</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+    <!-- Header Section End -->
+
+    <section class="user">
+        <div class="user_options-container">
+          <div class="user_options-text">
+            <div class="user_options-unregistered">
+              <h2 class="user_unregistered-title">Don't have an account?</h2>
+              <p class="user_unregistered-text">
+                </i>Access your health records in one place <i class="fas fa-light fa-clipboard "style="color: #63E6BE"></i><br><br>
+                Keep a track of appointments and doctor visits <i class="fas fa-solid fa-stethoscope" style="color: #63E6BE;"></i><br><br>
+                View your medical records and lab and test results <i class="fas fa-solid fa-notes-medical "style="color: #63E6BE"></i></p>
+              <button class="user_unregistered-signup" id="signup-button">Sign up</button>
+            </div>
+      
+            <div class="user_options-registered">
+              <h2 class="user_registered-title">Have an account?</h2>
+              <p class="user_registered-text"></p>
+              <button class="user_registered-login" id="login-button">Login</button>
+            </div>
+          </div>
+          
+          <div class="user_options-forms" id="user_options-forms">
+            <div class="user_forms-login">
+              <h2 class="forms_title">OneHealth Login</h2>
+              <form class="forms_form">
+                <fieldset class="forms_fieldset">
+                  <div class="forms_field">
+                    <input type="email" placeholder="Email" class="forms_field-input" required autofocus />
+                  </div>
+                  <div class="forms_field">
+                    <input type="password" placeholder="Password" class="forms_field-input" required />
+                  </div>
+                </fieldset>
+                <div class="forms_buttons">
+                  <!-- <button type="button" class="forms_buttons-forgot">Forgot password?</button> -->
+                  <!-- <a href="#" class="forms_buttons-action"><i class="fa-brands fa-google"></i> Sign in with Google</a> -->
+                  <button type="button" class="google-sign-in-button" id="googleSignInButton">
+                    Sign in with Google
+                </button>
+            
+                <script>
+                    document.getElementById('googleSignInButton').addEventListener('click', function() {
+                        window.location.href = 'https://accounts.google.com/servicelogin?hl=en-gb';
+                    });
+                </script>
+                  
+
+
+
+
+
+
+                  <input type="submit" value="Log In" class="forms_buttons-action">
+                </div>
+              </form>
+            </div>
+            <div class="user_forms-signup">
+              <h2 class="forms_title">Sign Up</h2>
+              <form class="forms_form">
+                <fieldset class="forms_fieldset">
+                  <div class="forms_field">
+                    <input type="text" placeholder="Full Name" class="forms_field-input" required />
+                  </div>
+                  <div class="forms_field">
+                    <input type="email" placeholder="Email" class="forms_field-input" required />
+                  </div>
+                  <div class="forms_field">
+                    <input type="password" placeholder="Password" class="forms_field-input" required />
+                  </div>
+                </fieldset>
+                <div class="forms_buttons">
+                  <input type="submit" value="Sign up" class="forms_buttons-action">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                loader.style.display = "none";
+            }, 900); 
+        });
+    </script>
+
+</body>
+</html>

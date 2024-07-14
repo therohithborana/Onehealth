@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+    
+    <div id="preloader"></div>
+
+    <!-- Header Section Starts -->
+    <div class="header">
+        <a href="#" class="logo"><i class="fas fa-heartbeat"></i> OneHealth</a>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="index.html#services">services</a>
+            <a href="index.html#about">about</a>
+            <a href="doctors.html">doctors</a>
+            <a href="index.html#book">book</a>
+            <a href="index.html#review">review</a>
+            <a href="index.html#blogs">blogs</a>
+            <a href="login.html">Login</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+    <!-- Header Section End -->
+
+    <!-- Doctors section Starts  -->
+     
+    <section class="doctors" id="doctors">
+        <h1  class="heading">our <span>doctors</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./image/doc-1.jpg" alt="">
+                <h3>Dr. Devi Prasad Shetty</h3>
+                <span>Cardiac Surgery</span>
+            
+                <div class="book-btn">
+                    <a href="index.html#book" class="btn">Book Appointment<span ></span> </a>
+                </div>
+                
+            </div>
+            <div class="box">
+                <img src="https://media.istockphoto.com/id/1298800629/photo/portrait-of-confident-male-doctor-looking-at-camera.jpg?s=612x612&w=0&k=20&c=CB3h3a-0yUBgaZHhF2Kd5ibfDv25Qcjsca-ia5gIWUM=" alt="">
+                <h3>Dr. Randeep Guleria</h3>
+                <span>Pulmonology</span>
+                <div class="book-btn">
+                    <a href="index.html#book" class="btn">Book Appointment<span ></span> </a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://media.istockphoto.com/id/1327024466/photo/portrait-of-male-doctor-in-white-coat-and-stethoscope-standing-in-clinic-hall.jpg?s=612x612&w=0&k=20&c=49wqOwwuonk9f8NACL7M_5RosqQPFwJ8-dpmeo9AvQw=" alt="">
+                <h3> Dr. Arvind Kumar</h3>
+                <span>Thoracic Surgery</span>
+                <div class="book-btn">
+                    <a href="index.html#book" class="btn">Book Appointment<span ></span> </a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="data:image/jpeg;base64,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" alt="">
+                <h3>Dr. Rohith Borana</h3>
+                <span>Hepatobiliary and Liver Transplant Surgery</span>
+                <div class="book-btn">
+                    <a href="index.html#book" class="btn">Book Appointment<span ></span> </a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./image/doc-5.jpg" alt="">
+                <h3>Dr. K. Radhakrishnan</h3>
+                <span>Neurology</span>
+                <div class="book-btn">
+                    <a href="index.html#book" class="btn">Book Appointment<span ></span> </a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://d35oenyzp35321.cloudfront.net/medium_Ms_Vishakha_Bhalla_49c2008cac.JPG" alt="">
+                <h3>Dr. Niveditha Saligram</h3>
+                <span>Clinical Psychologist</span>
+                <div class="book-btn">
+                    <a href="index.html#book" class="btn">Book Appointment<span ></span> </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Doctors section Ends  -->
+
+
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                loader.style.display = "none";
+            }, 900); 
+        });
+    </script>
+</body>
+</html>
